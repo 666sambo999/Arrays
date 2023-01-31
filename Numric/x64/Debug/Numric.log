@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\User\source\repos\Array\Numric\main.cpp(13,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Numric.vcxproj -> C:\Users\User\source\repos\Array\x64\Debug\Numeric.exe
