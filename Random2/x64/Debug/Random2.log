@@ -1,2 +1,4 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Random.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Random2.vcxproj -> C:\Users\User\source\repos\Array\x64\Debug\Random2.exe
+  main.cpp
+C:\Users\User\source\repos\Array\Random2\main.cpp(14,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\User\source\repos\Array\Random2\main.cpp(201,68): error C2065: 'j': undeclared identifier

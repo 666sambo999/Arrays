@@ -80,7 +80,7 @@ void main()
 		do  // делать это пока число не уникально  
 		{
 			arr[i] = rand() % n; // (80 - 70) + 70;
-			unique = true; // Предположим что сгенерировалось уникальное случайное число, но это нужо проверить;
+			unique = true; // Предположим что сгенерировалось уникальное случайное число, но это нужно проверить;
 			for (int j = 0; j < i; j++) // счетчик j перебирает числа 
 			{
 				// arr[i] - выбранный элемент 
@@ -103,9 +103,9 @@ void main()
 	cout << endl;
 #endif // KLASS_PABOTA
 
-	
+
 	// Дополнения + сортировка массива 
-	
+
 #ifdef SORTIROVKA
 	const int n = 10;
 	int arr[n];
@@ -151,16 +151,80 @@ void main()
 		cout << arr[i] << tab;
 	}
 	cout << endl;
+
+
+
+
+
 #endif // SORTIROVKA
 
+	// Массив с повторяющимися элементами
 
+	const int n = 10;
+	int arr[n];
 
+	int min, max;
+	cout << "Введите минимальное случайное число: "; cin >> min;
+	cout << "Введите максимальное случайное число: "; cin >> max;
 
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % (max - min) + min;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << tab;
+	}
+	cout << endl;
 
-
-
+	//// повтор
+	cout << "Повторяющиеся элементы массива: " << endl; 
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = i + 1; j < n-1; j++)
+		{
+			if (arr[j] == arr[i])
+			{
+				cout << arr[i] << tab; 
+			}
+			
+		}
+		
+	}
+	cout << endl; 
+	
+	// количество повторений 
+	cout << "Количество повторний каждого элемента: " << endl; 
+	for (int i = 0; i < n; i++)
+	{
+		cout << "Число " << arr[i] << " повторяется " << j << " раз" << endl;
+	}
+	cout << endl;
 	
 
+	//----------------------------------------------------------/
+	
+	//вариант №2;
+	/*int Mas[n];
+	int k = 0;
+	int Mas2[n];
+	
+	for (int j = 0; j < n; j++)
+	{
+		Mas[j] = rand() % (max-min) + min;
+		for (int i = 0; i < n; i++)
+		{
+			if (Mas[i] == Mas[j])
+				k++;
+		}
+		Mas2[j] = k;
+		k = 0;
+	}
+	cout << endl; 
+	for (int i = 0; i < n; i++)
+	{
+		cout << Mas[i] << '\t' << Mas2[i] << endl;
+	}*/
 
 
 }
